@@ -18,7 +18,7 @@ class OnboardingContent extends StatelessWidget {
           ), 
           Spacer(),
           Text(
-            "owala",
+            "Owala",
             style: TextStyle(
               color: primaryColor,
               fontSize: getProporsionateScreenWidht(36.0),
@@ -30,7 +30,7 @@ class OnboardingContent extends StatelessWidget {
             text,
             textAlign: TextAlign.center,
              style: TextStyle(
-            color: Colors.amber
+            color: textColor
           ),
           )
       ],

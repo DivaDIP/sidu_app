@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:owala_app/utils/const.dart';
+import 'package:owala_app/views/onboarding/auth/login_screen.dart';
 import 'package:owala_app/views/onboarding/onboarding_screen.dart';
 
 
@@ -31,9 +32,14 @@ class _OwalaAppState extends State<OwalaApp> {
           bodySmall: TextStyle(
             color: textColor
           ),
-        )
+        ),
+        scaffoldBackgroundColor: Colors.white
       ),
-      home: OnboardingScreen(),
+      initialRoute: '/login',
+      routes: {
+        '/onboarding': (context) => OnboardingScreen(),
+        '/login': (context) => LoginScreen(),
+      },
     );
   }
 }
