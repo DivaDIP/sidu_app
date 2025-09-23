@@ -15,8 +15,9 @@ class ColorAndSize extends StatelessWidget {
       children: [
         Expanded(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Colors", style: TextStyle(color: textColor)),
+              Text("Color", style: TextStyle(color: textColor)),
               Row(
                 children: [
                   ColorPicker(color: Color(0xFF90B4C6), isSelected: true),
@@ -44,7 +45,7 @@ class ColorAndSize extends StatelessWidget {
                   ),
                   children:[
                     TextSpan(
-                      text: "${product.size} oz",
+                      text: " ${product.size} ",
                       style: Theme.of(context)
                       .textTheme
                       .titleLarge!
