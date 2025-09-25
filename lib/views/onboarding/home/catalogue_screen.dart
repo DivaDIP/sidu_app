@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:owala_app/utils/const.dart';
-import 'package:owala_app/views/onboarding/home/components/app_bar.dart';
-// import 'package:owala_app/views/onboarding/home/components/balance_cart.dart';
-import 'package:owala_app/views/onboarding/home/components/banner_slider.dart';
-import 'package:owala_app/views/onboarding/home/components/bottom_navbar.dart';
-import 'package:owala_app/views/onboarding/home/components/categories.dart';
-import 'package:owala_app/views/onboarding/home/components/drinkware_grid.dart';
+import 'package:sidu_app/utils/const.dart';
+import 'package:sidu_app/views/onboarding/home/components/app_bar.dart';
+import 'package:sidu_app/views/onboarding/home/components/banner_slider.dart';
+import 'package:sidu_app/views/onboarding/home/components/bottom_navbar.dart';
+import 'package:sidu_app/views/onboarding/home/components/categories.dart';
+import 'package:sidu_app/views/onboarding/home/components/drinkware_grid.dart';
 
 class CatalogueScreen extends StatefulWidget {
   const CatalogueScreen({super.key});

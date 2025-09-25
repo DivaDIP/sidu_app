@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:owala_app/models/products_model.dart';
-import 'package:owala_app/utils/const.dart';
-import 'package:owala_app/views/details/components/add_to_cart.dart';
-import 'package:owala_app/views/details/components/color_and_size.dart';
-import 'package:owala_app/views/details/components/description.dart';
-// import 'package:owala_app/views/details/components/fav_button.dart';
-import 'package:owala_app/views/details/components/product_title.dart';
+import 'package:sidu_app/models/products_model.dart';
+import 'package:sidu_app/utils/const.dart';
+import 'package:sidu_app/views/details/components/add_to_cart.dart';
+import 'package:sidu_app/views/details/components/color_and_size.dart';
+import 'package:sidu_app/views/details/components/description.dart';
+import 'package:sidu_app/views/details/components/product_title.dart';
 
 class DetailScreen extends StatelessWidget {
   final ProductsModel product;

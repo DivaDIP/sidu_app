@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:owala_app/models/products_model.dart';
-import 'package:owala_app/utils/const.dart';
-import 'package:owala_app/views/details/components/color_picker.dart';
+import 'package:sidu_app/models/products_model.dart';
+import 'package:sidu_app/utils/const.dart';
+import 'package:sidu_app/views/details/components/color_picker.dart';
 
 class ColorAndSize extends StatelessWidget {
   final ProductsModel product;

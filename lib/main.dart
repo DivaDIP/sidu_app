@@ -9,18 +9,18 @@ import 'package:owala_app/views/onboarding/onboarding_screen.dart';
 
 
 void main() {
-  runApp(OwalaApp());
+  runApp(SiduApp());
 }
 
 
-class OwalaApp extends StatefulWidget {
-  const OwalaApp({super.key});
+class SiduApp extends StatefulWidget {
+  const SiduApp({super.key});
 
   @override
-  State<OwalaApp> createState() => _OwalaAppState();
+  State<SiduApp> createState() => _SiduAppState();
 }
 
-class _OwalaAppState extends State<OwalaApp> {
+class _SiduAppState extends State<SiduApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
