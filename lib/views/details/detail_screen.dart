@@ -10,7 +10,6 @@ import 'package:owala_app/views/details/components/product_title.dart';
 class DetailScreen extends StatelessWidget {
   final ProductsModel product;
 
-
   const DetailScreen({super.key, required this.product});
 
   @override
@@ -24,12 +23,15 @@ class DetailScreen extends StatelessWidget {
         backgroundColor: product.color,
         elevation: 0,
         actions: [
-          IconButton(
-            icon: Icon(
-              Icons.favorite,
-              color: Colors.red,
+          Container(
+            decoration: BoxDecoration(
+              color: Color(0xFFF28B30).withValues(alpha: 0.1), // background color
+              shape: BoxShape.circle, // biar bulat
             ),
-            onPressed: () {},
+            child: IconButton(
+              icon: Icon(Icons.favorite, color: Colors.red),
+              onPressed: () {},
+            ),
           ),
         ],
       ),
@@ -45,33 +47,31 @@ class DetailScreen extends StatelessWidget {
                     padding: EdgeInsets.only(
                       top: defaultPadding,
                       left: 25,
-                      right: defaultPadding
+                      right: defaultPadding,
                     ),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(24),
-                        topRight: Radius.circular(24)
+                        topRight: Radius.circular(24),
                       ),
                     ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        SizedBox(height: 50,),
-                        ColorAndSize(
-                          product: product,
-                        ),
-                        SizedBox(height: defaultPadding,),
+                        SizedBox(height: 50),
+                        ColorAndSize(product: product),
+                        SizedBox(height: defaultPadding),
                         Description(product: product),
-                        SizedBox(height: 20,),
+                        SizedBox(height: 20),
                         // Row(
                         //   mainAxisAlignment: MainAxisAlignment.end,
                         //   children: [
                         //     FavButton(product: product)
                         //   ],
                         // ),
-                        SizedBox(height: 20,),
-                        AddToCart(product: product, quantity: quantity)
+                        SizedBox(height: 20),
+                        AddToCart(product: product, quantity: quantity),
                       ],
                     ),
                   ),
@@ -80,10 +80,10 @@ class DetailScreen extends StatelessWidget {
                     left: defaultPadding,
                     right: 1,
                     child: ProductTitle(product: product),
-                  )
+                  ),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),

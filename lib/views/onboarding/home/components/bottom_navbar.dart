@@ -22,30 +22,11 @@ class BottomNavbar extends StatelessWidget {
           label: "",
         ),
         BottomNavigationBarItem(
-          icon: _buildNavIcon(Icons.car_crash, "Wishlist", 1),
+          icon: _buildNavIcon(Icons.favorite, "Wishlist", 1),
           label: "",
         ),
         BottomNavigationBarItem(
-          icon: Stack(
-            clipBehavior: Clip.none,
-            children: [
-              _buildNavIcon(Icons.favorite, "Setting", 2),
-              // contoh badge
-              if (selectedIndex != 2)
-                Positioned(
-                  right: -2,
-                  top: -2,
-                  child: Container(
-                    height: 8,
-                    width: 8,
-                    decoration: const BoxDecoration(
-                      color: Colors.orange,
-                      shape: BoxShape.circle,
-                    ),
-                  ),
-                ),
-            ],
-          ),
+          icon: _buildNavIcon(Icons.chat_bubble, "Setting", 2),
           label: "",
         ),
         BottomNavigationBarItem(
@@ -65,14 +46,13 @@ class BottomNavbar extends StatelessWidget {
 
   Widget _buildNavIcon(IconData icon, String label, int index) {
     final bool isSelected = selectedIndex == index;
-    return AnimatedContainer(
-      duration: const Duration(milliseconds: 200),
+    return Container(
       padding: EdgeInsets.symmetric(
         horizontal: isSelected ? 12 : 0,
         vertical: 6,
       ),
       decoration: BoxDecoration(
-        color: isSelected ? primaryColor : Colors.transparent,
+        color: isSelected ? secondaryColor : Colors.transparent,
         borderRadius: BorderRadius.circular(30),
       ),
       child: Row(
@@ -80,15 +60,17 @@ class BottomNavbar extends StatelessWidget {
         children: [
           Icon(
             icon,
+            size: 20, // kecilkan icon
             color: isSelected ? Colors.white : Colors.grey,
           ),
           if (isSelected) ...[
-            const SizedBox(width: 5),
+            const SizedBox(width: 6),
             Text(
               label,
               style: const TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
+                fontSize: 13, // kecilkan teks supaya seimbang
               ),
             ),
           ],

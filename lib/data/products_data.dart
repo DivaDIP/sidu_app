@@ -45,7 +45,7 @@ final List<ProductsModel> products = [
   ProductsModel(
     id: 6,
     title: "Origami Sidu",
-    price: 380000,
+    price: 38000,
     size: "3x3",
     description: "Hey there! I’m packed with caffeine and ready for fun. My smooth spout keeps drinks at the ideal temperature. Splash-resistant, not leak-proof, so sip confidently. Let’s meet for coffee and enjoy some delightful moments together!",
     image: "assets/images/sidu/origami_sidu.png",

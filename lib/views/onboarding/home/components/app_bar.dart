@@ -45,14 +45,14 @@ class CatalogeuAppBar extends StatelessWidget implements PreferredSizeWidget {
               decoration: InputDecoration(
                 hintText: "Search...",
                 hintStyle: TextStyle(
-                  color: Color(0xFF6883AA)
+                  color: Colors.white
                 ),
-                prefixIcon: Icon(Icons.search, color: Color(0xFF3B5B8A)),
+                prefixIcon: Icon(Icons.search, color: Colors.white),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(30),
                   borderSide: BorderSide.none,
                 ),
-                fillColor: Color(0xFFFADFC7),
+                fillColor: Color(0xFF6E86AA),
                 filled: true,
                 contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 0),
               ),
