@@ -5,14 +5,14 @@ final String assetsPath = "/assets/images/drinkware/SmoothSip_TelescopeTales.png
 List<OnboardingModel> onBoardingData = [
   OnboardingModel(
   image: assetsPath, 
-  text: "Welcome to Owala – The water bottle \nthat transforms the way you stay hydrated"
+  text: "SIDU hadir sebagai pilihan kertas terpercaya \ndengan kualitas cetak yang tajam dan jelas."
   ),
   OnboardingModel(
   image: assetsPath, 
-  text: "Stylish & Eco-Friendly Design. \nStay hydrated in style while caring for our planet"
+  text: "Untuk belajar, kerja, hingga dokumen penting, SIDU siap mendukung produktivitas Anda"
   ),
   OnboardingModel(
   image: assetsPath, 
-  text: "Ready to start your hydration journey? \nLet’s explore our products!"
+  text: "Dengan standar mutu tinggi, SIDU menjadi sahabat \nsetia dalam setiap lembar cerita dan prestasi"
   )
 ];

@@ -4,7 +4,7 @@ import 'package:owala_app/utils/const.dart';
 import 'package:owala_app/views/details/components/add_to_cart.dart';
 import 'package:owala_app/views/details/components/color_and_size.dart';
 import 'package:owala_app/views/details/components/description.dart';
-import 'package:owala_app/views/details/components/fav_button.dart';
+// import 'package:owala_app/views/details/components/fav_button.dart';
 import 'package:owala_app/views/details/components/product_title.dart';
 
 class DetailScreen extends StatelessWidget {
@@ -26,15 +26,8 @@ class DetailScreen extends StatelessWidget {
         actions: [
           IconButton(
             icon: Icon(
-              Icons.search,
-              color: textColor,
-            ),
-            onPressed: () {},
-          ),
-          IconButton(
-            icon: Icon(
-              Icons.shopping_cart_outlined,
-              color: textColor,
+              Icons.favorite,
+              color: Colors.red,
             ),
             onPressed: () {},
           ),
@@ -71,12 +64,12 @@ class DetailScreen extends StatelessWidget {
                         SizedBox(height: defaultPadding,),
                         Description(product: product),
                         SizedBox(height: 20,),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          children: [
-                            FavButton(product: product)
-                          ],
-                        ),
+                        // Row(
+                        //   mainAxisAlignment: MainAxisAlignment.end,
+                        //   children: [
+                        //     FavButton(product: product)
+                        //   ],
+                        // ),
                         SizedBox(height: 20,),
                         AddToCart(product: product, quantity: quantity)
                       ],

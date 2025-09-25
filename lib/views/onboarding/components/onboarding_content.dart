@@ -12,13 +12,17 @@ class OnboardingContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Image.asset(
-          'assets/images/logo.png',
-          fit: BoxFit.cover,
-          ), 
+        Spacer(),
+        Center(
+          child:
+           Image.asset(
+            'assets/images/logo_sidu.png',
+            fit: BoxFit.cover,
+            ),
+        ), 
           Spacer(),
           Text(
-            "Owala",
+            "Sinar Dunia",
             style: TextStyle(
               color: primaryColor,
               fontSize: getProporsionateScreenWidht(36.0),

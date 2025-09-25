@@ -10,19 +10,19 @@ class Categories extends StatefulWidget {
 
 List<Map<String, dynamic>> categories = [
   {
-    "icon": Icons.local_drink,
-    "text": "Drinkware",
+    "icon": Icons.book,
+    "text": "Buku Tulis",
   },
   {
-    "icon": Icons.color_lens,
-    "text": "Color Drop",
+    "icon": Icons.draw,
+    "text": "Drawing Book",
   },
   {
-    "icon": Icons.card_giftcard,
-    "text": "Bundles",
+    "icon": Icons.note,
+    "text": "Kertas",
   },
   {
-    "icon": Icons.accessibility,
+    "icon": Icons.create,
     "text": "Accesories",
   }, 
 ];
@@ -48,17 +48,17 @@ class _CategoriesState extends State<Categories> {
             ),
           ),
           Spacer(),
-          GestureDetector(
-            onTap: () {},
-            child: Text(
-              "View all",
-              style: TextStyle(
-                color: Color(0xFF236A91),
-                fontSize: 16,
-                fontWeight: FontWeight.bold
-              ),
-            ),
-          )
+          // GestureDetector(
+          //   onTap: () {},
+          //   child: Text(
+          //     "View all",
+          //     style: TextStyle(
+          //       color: Color(0xFFF28B30),
+          //       fontSize: 16,
+          //       fontWeight: FontWeight.bold
+          //     ),
+          //   ),
+          // )
           ],
         ),
         SizedBox(height: defaultPadding,),
@@ -95,7 +95,7 @@ class _CategoriesState extends State<Categories> {
               ),
               child: Icon(
                 categories[index]["icon"],
-                color: selectedIndex == index ? primaryColor : secondaryColor,
+                color: selectedIndex == index ? secondaryColor : primaryColor,
                 size: 20,
               ),
             ),
@@ -103,7 +103,7 @@ class _CategoriesState extends State<Categories> {
             Text(
               categories[index]["text"],
               style: TextStyle(
-                color: selectedIndex == index ? primaryColor : secondaryColor,
+                color: selectedIndex == index ? secondaryColor : primaryColor,
                 fontWeight: selectedIndex == index ? FontWeight.bold : FontWeight.normal,
                 fontSize: 12
               ),

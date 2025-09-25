@@ -68,7 +68,7 @@ final PageController _pageController = PageController();
                   },
                   child: Text(
                     // currentPage == 3 -1 ?
-                    currentPage == onBoardingData.length - 1 ? "Get Started" : "Next",
+                    currentPage == onBoardingData.length - 1 ? "Mulai Jelajahi" : "Next",
                     style: TextStyle(color: Colors.white),
                   ),
                 ),

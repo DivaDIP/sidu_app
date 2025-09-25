@@ -15,7 +15,8 @@ class Description extends StatelessWidget {
         product.description,
         style: TextStyle(
           height: 1.5,
-          color: textColor
+          fontWeight: FontWeight.w500,
+          color: Color(0xFF3B5B8A)
         ),
       ),
     );

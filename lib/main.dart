@@ -27,7 +27,7 @@ class _OwalaAppState extends State<OwalaApp> {
       debugShowCheckedModeBanner: false,
       title: "Owala App",
       theme: ThemeData(
-        fontFamily: 'Plus Jakarta Sans',
+        fontFamily: 'Montserrat',
         visualDensity: VisualDensity.adaptivePlatformDensity, //untuk mengatur kepadatan disetiap platform
         textTheme: TextTheme(
           bodyMedium: TextStyle(
@@ -39,7 +39,7 @@ class _OwalaAppState extends State<OwalaApp> {
         ),
         scaffoldBackgroundColor: Colors.white
       ),
-      initialRoute: '/login',
+      initialRoute: '/onboarding',
       routes: {
         '/onboarding': (context) => OnboardingScreen(),
         '/login': (context) => LoginScreen(),

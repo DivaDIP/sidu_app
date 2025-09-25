@@ -81,11 +81,11 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Plus Jakarta Sans
+    - family: Montserrat
       fonts:
-        - asset: assets/fonts/plus-jakarta-sans/PlusJakartaSans-Regular.ttf
-        - asset: assets/fonts/plus-jakarta-sans/PlusJakartaSans-Bold.ttf
-        - asset: assets/fonts/plus-jakarta-sans/PlusJakartaSans-Light.ttf
+        - asset: assets/fonts/montserrat/Montserrat-Regular.ttf
+        - asset: assets/fonts/montserrat/Montserrat-Bold.ttf
+        - asset: assets/fonts/montserrat/Montserrat-Medium.ttf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

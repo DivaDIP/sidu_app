@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:owala_app/utils/const.dart';
 import 'package:owala_app/views/onboarding/home/components/app_bar.dart';
-import 'package:owala_app/views/onboarding/home/components/balance_cart.dart';
+// import 'package:owala_app/views/onboarding/home/components/balance_cart.dart';
 import 'package:owala_app/views/onboarding/home/components/banner_slider.dart';
 import 'package:owala_app/views/onboarding/home/components/bottom_navbar.dart';
 import 'package:owala_app/views/onboarding/home/components/categories.dart';
@@ -36,7 +36,7 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                BalanceCard(),
+                // BalanceCard(),
                 BannerSlider(),
                 SizedBox(height: 15,),
                 Categories(),
@@ -44,7 +44,7 @@ class _CatalogueScreenState extends State<CatalogueScreen> {
                 Padding(
                   padding: EdgeInsets.all(defaultPadding),
                   child: Text(
-                    "Drinkware",
+                    "Our Products",
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,

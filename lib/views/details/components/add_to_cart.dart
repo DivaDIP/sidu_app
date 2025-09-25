@@ -15,58 +15,60 @@ class AddToCart extends StatelessWidget {
       child: Row(
         children: [
           Container(
-            margin: EdgeInsets.only(right: defaultPadding),
-            height: 50,
-            width: 54,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(16),
-              border: Border.all(color: product.color),
-            ),
-            child: IconButton(
-              icon: Icon(Icons.add_shopping_cart_outlined),
-              onPressed: () {
-                // TODO 1: menambahkan product ke halaman keranjang
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
-                    content: 
-                    Text(
-                      "successfully added ${product.title}"
-                    ),
-                    duration: Duration(seconds: 2),
-                  )
-                );
-              },
+            margin: EdgeInsets.only(right: 50), // jarak antara harga & tombol
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Text(
+                  "Rp ",
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFFF28B30),
+                  ),
+                ),
+                Text(
+                  "${product.price}",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFFF28B30),
+                  ),
+                ),
+              ],
             ),
           ),
           Expanded(
-            child: ElevatedButton(
+            child: ElevatedButton.icon(
               style: ElevatedButton.styleFrom(
-                backgroundColor: product.color,
-                maximumSize: Size.fromHeight(50),
+                backgroundColor: Color(0xFFF28B30), 
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(18)
-                )
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                padding: EdgeInsets.symmetric(vertical: 14),
               ),
               onPressed: () {
-                // TODO 2: direct button buy now ke halaman cart
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
-                    content: Text(
-                      "${product.title} is purchased",
-                    ),
+                    content: Text("${product.title} added to cart"),
                     duration: Duration(seconds: 2),
-                  )
+                  ),
                 );
               },
-              child: Text(
-                "Buy now",
+              icon: Icon(
+                Icons.shopping_cart_outlined, 
+                color: Colors.white,
+                
+                ),
+              label: Text(
+                "Add to Cart",
                 style: TextStyle(
+                  color: Colors.white,
                   fontWeight: FontWeight.bold,
-                  color: textColor
                 ),
               ),
             ),
-          )
+          ),
         ],
       ),
     );

@@ -20,26 +20,33 @@ class LoginScreen extends StatelessWidget {
       body:SingleChildScrollView(
         padding: EdgeInsets.symmetric(horizontal: 16, vertical: 32),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            SizedBox(height: 70),
+            SizedBox(height: 50,),
+            Image.asset(
+              "assets/images/logo_sidu.png",
+              height: 140,
+            ),
+            SizedBox(height: 20,),
+            // Text(
+            //   "Here We Go!!",
+            //   style: TextStyle(
+            //     fontSize: 32,
+            //     fontWeight: FontWeight.bold,
+            //     color: textColor
+            //   ),
+            // ),
+            SizedBox(height: 10),
             Text(
-              "Welcome Back",
+              "Login dulu, biar semua barang yang kamu mau ada, jadi ngga cuma angan angan",
+              textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 32,
-                fontWeight: FontWeight.bold,
-                color: textColor
+                fontSize: 14,
+                color: textColor,
+                fontWeight: FontWeight.w500
               ),
             ),
-            SizedBox(height: 8),
-            Text(
-              "Please enter a form to login to this app",
-              style: TextStyle(
-                fontSize: 16,
-                color: textColor
-              ),
-            ),
-            SizedBox(height: 60),
+            SizedBox(height: 20),
             Form(
               key: _formKey,
               child: Column(
@@ -56,7 +63,10 @@ class LoginScreen extends StatelessWidget {
                     label: "Password",
                     hintText: "Enter your Password",
                     obscureText: true,
-                    suffixIcon: Icon(Icons.visibility_off),
+                    suffixIcon: Icon(
+                      Icons.visibility_off,
+                      color: textColor,
+                      ),
                     validator: Validators.validatePassword,
                   ),
                   SizedBox(height: 10),
@@ -76,7 +86,7 @@ class LoginScreen extends StatelessWidget {
                       }
                     }, 
                     textColor: Colors.white, 
-                    backgroundColor: primaryColor
+                    backgroundColor: primaryColor,
                     ),
                     SizedBox(height: 20),
                     Row(
@@ -84,7 +94,7 @@ class LoginScreen extends StatelessWidget {
                         Expanded(
                           child: Divider(
                             thickness: 1,
-                            color: textColor,
+                            color: Color(0xFF3B5B8A),
                           )
                         ),
                         Padding(
@@ -92,14 +102,14 @@ class LoginScreen extends StatelessWidget {
                           child: Text(
                             "or",
                             style: TextStyle(
-                              color: textColor
+                              color: textColor,
                               ),
                             ),
                         ),
                         Expanded(
                           child: Divider(
                             thickness: 1,
-                            color: textColor,
+                            color: Color(0xFF3B5B8A),
                           )
                         )
                       ],

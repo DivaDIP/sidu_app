@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:owala_app/models/products_model.dart';
-import 'package:owala_app/utils/const.dart';
+// import 'package:owala_app/utils/const.dart';
 
 class ProductTitle extends StatelessWidget {
   final ProductsModel product;
@@ -23,16 +23,16 @@ class ProductTitle extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "Drinkware",
+            "Sidu Product",
             style: TextStyle(
-              color: textColor
+              color: Colors.white
             ),
           ),
           SizedBox(height: 5,),
           Text(
             product.title,
             style: TextStyle(
-              color: textColor,
+              color: Colors.white,
               fontSize: 26,
               fontWeight: FontWeight.bold
             ),
@@ -43,14 +43,6 @@ class ProductTitle extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      product.getFormattedPrice(),
-                      style: TextStyle(
-                        color: textColor,
-                        fontSize: 22,
-                        fontWeight: FontWeight.bold
-                      ),
-                    )
                   ],
                 ),
               ),

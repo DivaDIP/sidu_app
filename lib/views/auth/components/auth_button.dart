@@ -14,7 +14,13 @@ class AuthButton extends StatelessWidget {
     return ElevatedButton.icon(
       onPressed: onPressed,
       icon: icon ?? SizedBox.shrink(),
-      label: Text(text),
+      label: Text(
+        text,
+        style: TextStyle(
+          fontWeight: FontWeight.w500,
+          fontSize: 15
+        ),
+        ),
       style: ElevatedButton.styleFrom(
         minimumSize: Size(double.infinity, 50),
         backgroundColor: backgroundColor,
@@ -24,7 +30,7 @@ class AuthButton extends StatelessWidget {
             : null,
 
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8)
+          borderRadius: BorderRadius.circular(30)
         )
       ),
       // ?? ini adalah simbol dari null-aware-operator atau operator yang digunakan untuk menyimpan nilai default untuk suatu kondisi

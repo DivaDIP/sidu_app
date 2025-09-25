@@ -17,7 +17,11 @@ class ColorAndSize extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Color", style: TextStyle(color: textColor)),
+              Text("Color", style: TextStyle(
+                color: Color(0xFFF28B30),
+                fontWeight: FontWeight.bold
+                )
+                ),
               Row(
                 children: [
                   ColorPicker(color: Color(0xFF90B4C6), isSelected: true),
@@ -35,7 +39,8 @@ class ColorAndSize extends StatelessWidget {
               Text(
                 "Size",
                 style: TextStyle(
-                  color: textColor
+                  color: Color(0xFFF28B30),
+                  fontWeight: FontWeight.bold
                 ),
               ),
               RichText(
@@ -49,7 +54,7 @@ class ColorAndSize extends StatelessWidget {
                       style: Theme.of(context)
                       .textTheme
                       .titleLarge!
-                      .copyWith(fontWeight: FontWeight.bold)
+                      .copyWith(fontWeight: FontWeight.bold, color: Color(0xFFF28B30))
                   )
                   ] 
                 ),

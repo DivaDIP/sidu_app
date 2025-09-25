@@ -6,35 +6,54 @@ class AuthFormField extends StatelessWidget {
   final String? hintText;
   final bool obscureText;
   final Widget? suffixIcon;
-  final String? Function(String?) ? validator;
+  final String? Function(String?)? validator;
   final TextInputType? keyboardType;
 
-  const AuthFormField({super.key, required this.controller, required this.label, this.hintText, this.obscureText = false, this.suffixIcon, this.validator, this.keyboardType});
-
+  const AuthFormField({
+    super.key,
+    required this.controller,
+    required this.label,
+    this.hintText,
+    this.obscureText = false,
+    this.suffixIcon,
+    this.validator,
+    this.keyboardType,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          label,
-          style: TextStyle(
-            fontSize: 16,
-            fontWeight: FontWeight.w500,
-          ),
-        ),
-        SizedBox(height: 8,),
+        // Text(
+        //   label,
+        //   style: TextStyle(
+        //     fontSize: 16,
+        //     fontWeight: FontWeight.w700,
+        //     color: Color(0xFF3B5B8A),
+        //   ),
+        // ),
+        SizedBox(height: 8),
         TextFormField(
           controller: controller,
           obscureText: obscureText,
           keyboardType: keyboardType,
           decoration: InputDecoration(
             hintText: hintText,
+            hintStyle: TextStyle(
+              color: Color(0xFF3B5B8A)
+            ),
             suffixIcon: suffixIcon,
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(8)
-            )
+            enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(30),
+              borderSide: BorderSide(color: Color(0xFFFADFC7)),
+            ),
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(30),
+              borderSide: BorderSide(color: Color(0xFFFADFC7)),
+            ),
+            fillColor: Color(0xFFFADFC7),
+            filled: true,
           ),
           validator: validator,
         ),
