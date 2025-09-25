@@ -1,4 +1,4 @@
-# owala_app
+# sidu_app
 
 A new Flutter project.
 
