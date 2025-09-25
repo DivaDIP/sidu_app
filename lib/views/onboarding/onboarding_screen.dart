@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:owala_app/utils/size_config.dart';
-import 'package:owala_app/views/onboarding/components/body.dart';
+import 'package:sidu_app/utils/size_config.dart';
+import 'package:sidu_app/views/onboarding/components/body.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});

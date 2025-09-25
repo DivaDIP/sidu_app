@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:owala_app/utils/const.dart';
-import 'package:owala_app/utils/size_config.dart';
+import 'package:sidu_app/utils/const.dart';
+import 'package:sidu_app/utils/size_config.dart';
 
 class OnboardingContent extends StatelessWidget {
   const OnboardingContent({super.key, required this.text, required this.image});

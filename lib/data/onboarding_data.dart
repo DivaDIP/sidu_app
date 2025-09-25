@@ -1,4 +1,4 @@
-import 'package:owala_app/models/onboarding_screen_model.dart';
+import 'package:sidu_app/models/onboarding_screen_model.dart';
 
 final String assetsPath = "/assets/images/drinkware/SmoothSip_TelescopeTales.png";
 

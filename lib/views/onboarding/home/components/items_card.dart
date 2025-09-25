@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:owala_app/models/products_model.dart';
-import 'package:owala_app/utils/const.dart';
+import 'package:sidu_app/models/products_model.dart';
+import 'package:sidu_app/utils/const.dart';
 
 class ItemsCard extends StatelessWidget {
   final ProductsModel product;

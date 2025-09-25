@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:owala_app/data/onboarding_data.dart';
-import 'package:owala_app/utils/const.dart';
-import 'package:owala_app/views/onboarding/components/onboarding_content.dart';
+import 'package:sidu_app/data/onboarding_data.dart';
+import 'package:sidu_app/utils/const.dart';
+import 'package:sidu_app/views/onboarding/components/onboarding_content.dart';
 
 class Body extends StatefulWidget {
   const Body({super.key});

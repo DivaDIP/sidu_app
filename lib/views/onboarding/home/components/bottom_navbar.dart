@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:owala_app/utils/const.dart';
+import 'package:sidu_app/utils/const.dart';
 
 class BottomNavbar extends StatelessWidget {
   final int selectedIndex;
